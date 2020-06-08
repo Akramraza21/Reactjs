@@ -1,8 +1,16 @@
 import React from 'react'
 import style from './Model.css'
+import Aux from '../../../HOC/Aux'
+import Backdrop from '../Backdrop/Backdrop'
 
-const model = (props) => ( <div className="Model">
-                                {props.children}
-                            </div>);
+const model = (props) => ( 
+    <Aux>
+        <Backdrop show={props.show} clicked={props.modelClosed} />
+        <div className="Modal"
+            style={{transform:props.show ? 'translateY(0)' : 'translateY(-100vh)',
+            opacity:props.show ? '1' : '0'}}>
+            {props.children}
+        </div>
+    </Aux>); 
 
 export default model;
