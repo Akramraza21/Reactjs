@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Button.css'
+import './Button.css'
 const button = props => (
     <button 
     className={["Button",[props.btnType]].join(' ')}

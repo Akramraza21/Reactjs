@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Burger.css'
+import './Burger.css'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 const burger = (props) => {
