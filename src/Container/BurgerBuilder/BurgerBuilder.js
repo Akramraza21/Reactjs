@@ -9,7 +9,7 @@ import Spinner from '../../Component/UI/Spinner/Spinner'
 import withErrorHandling from '../../HOC/withErrorHendling/withErrorHandling'
 
 
-const IngredientPrices = {
+const IngredientPrices = { 
     salad:0.5,
     cheese:0.4,
     meat:1.3,
@@ -66,12 +66,12 @@ class BurgerBuilder extends Component {
         this.setState({spinner:true})
         let order = {
             customerInfo:{
-                name:'swe',
-                age:'21',
+                name:'Abraham',
+                age:'23',
                 address:{
                     street:24+'test',
-                    village:'taragarh',
-                    pinCode:'212104'
+                    village:'taragarh ajmer',
+                    pinCode:'312432'
                 },
                 mobile:8096699875,
             },

@@ -1,5 +1,2 @@
-const auxlary = (props) => (
-    props.children
-)
-
+const auxlary = props => props.children
 export default auxlary;
